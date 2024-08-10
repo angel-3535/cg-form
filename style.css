@@ -1,3 +1,138 @@
+body {
+  background-color: #0D0403;
+  display: flex;
+  justify-content: center;
+  color: #C7EDFF;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-light{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.montserrat-bold{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.content {
+  background-color: #260D0A;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 80vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.leftpane {
+  background-image: url("https://utfs.io/f/30964f11-f490-4826-9230-b002b91196f4-1nq2cb.png");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position-y: center;
+  background-position-x: 40%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  width: 33%;
+  flex-basis: auto;
+}
+
+.leftpane-content {
+  display: flex;
+  align-items: flex-end;
+  height: 70%;
+}
+
+.logoContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  width: 100%;
+}
+
+.rightpane {
+  width: 66%;
+  flex-basis: auto;
+
+}
+.rightpane-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+}
+
+.explanation-paragraph{
+  text-align: center;
+  padding: 2em;
+}
+
+.field-set{
+  border: 1px none #000;
+  border-bottom: 0.1em solid rgb(0,0,0,0.2);
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-title{
+  font-size: 1.3em;
+  padding-left: 1em;
+  text-align: center;
+}
+
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.input-label{
+  color: #666;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3em;
+  padding-right: 3em;
+  align-items: center;
+  align-content: center;
+}
+
+.inputPair {
+  padding: 0.3em;
+  display: flex;
+  justify-content: center;
+}
+
+
+
 input:invalid {
   border-color: red;
 }
@@ -6,6 +141,109 @@ input:valid {
   border-color: green;
 }
 
-input:focus{
-  border-color: green;
+input:placeholder-shown {
+  border-color: #0487D9;
+}
+
+
+.button-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* From Uiverse.io by mrhyddenn */ 
+.form__group {
+  position: relative;
+  padding: 20px 20px 0;
+  width: 100%;
+  max-width: 26em;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #116399, #38caef);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #38caef;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+
+
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
 }
