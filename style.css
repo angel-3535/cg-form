@@ -57,10 +57,12 @@ body {
   display: flex;
   align-items: flex-end;
   height: 70%;
+  width: 100%;
 }
 
 .logoContainer {
   background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 .logo {
